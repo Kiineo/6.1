@@ -13,7 +13,7 @@ function getBooksBorrowedCount(books) {
     let borrowsCurrent = currentBook.borrows
 
   let borrowsArr = []
-borrowsCurrent.forEach((v,idx)=>{borrowsArr.push(v.returned)})
+borrowsCurrent.map((v,idx)=>{borrowsArr.push(v.returned)})
 
 console.log(borrowsArr)
 
