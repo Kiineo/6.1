@@ -103,8 +103,10 @@ solution.push(currentObj)
 
 
 solution.sort((a,b)=>{return b.count - a.count})
-
-let finalSolution = solution.slice(0,5)
+function findSolution(input) {
+  return input.slice(0,5)
+}
+let finalSolution = findSolution(solution)
 return finalSolution
 }
 
