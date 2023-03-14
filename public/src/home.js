@@ -48,8 +48,8 @@ solution.push(currentObj)
 
 solution.sort((a,b)=>{return b.count - a.count})
 
-if(solution.length >= 5){solution.pop()}
-return solution
+const finalSolution = solution.filter((v,idx)=>{return idx<5})
+return finalSolution
 
 }
 
