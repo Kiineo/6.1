@@ -74,6 +74,10 @@ return finalSolution
 }
 
 function getMostPopularAuthors(books,authors) {
+  
+    let nonSenseArr = [1,2,3]
+ let nonSenseSolution = nonSenseArr.reduce((a,b)=>a+b,0)
+ console.log(nonSenseSolution)
 let solution = []
 for(let i = 0; i < books.length; i++){
 let currentObj = {}
